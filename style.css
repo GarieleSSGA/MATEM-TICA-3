@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background: #000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.canvas-container {
+    margin-top: 20px;
+}
+
+canvas {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.quiz {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.quiz h3 {
+    font-size: 2rem;
+}
+
+.quiz-options {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.quiz-options button {
+    margin: 0 10px;
+}
+
+#backgroundVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
