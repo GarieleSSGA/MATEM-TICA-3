@@ -81,7 +81,7 @@
     </main>
 
     <video autoplay muted loop id="backgroundVideo">
-        <source src="Diseño sin título (13).mp4" type="video/mp4">
+        <source src="background.mp4" type="video/mp4">
         Tu navegador no soporta el elemento de video.
     </video>
 
@@ -92,5 +92,18 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const audio = document.getElementById('backgroundAudio');
+
+            // Intentar reproducir el audio automáticamente
+            audio.play().catch(function() {
+                // Si la reproducción automática falla, agregar un listener para el primer clic del usuario
+                document.body.addEventListener('click', function() {
+                    audio.play();
+                }, { once: true });
+            });
+        });
+    </script>
 </body>
 </html>
