@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas y Tecnología para Ingeniería Civil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Matemáticas y Tecnología para Ingeniería Civil</h1>
+            <nav>
+                <ul>
+                    <li><a href="#simulation1">Simulación 1</a></li>
+                    <li><a href="#simulation2">Simulación 2</a></li>
+                    <li><a href="#simulation3">Simulación 3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="simulation1">
+            <h2>Simulación 1: Crecimiento Poblacional</h2>
+            <div class="content">
+                <div class="equation">
+                    <h3>Ecuación Diferencial</h3>
+                    <p>\(\frac{dP}{dt} = kP\)</p>
+                    <p>Solución: \(P(t) = P_0 e^{kt}\)</p>
+                    <div id="example1"></div>
+                </div>
+                <div class="canvas-container">
+                    <canvas id="simulationChart1"></canvas>
+                </div>
+            </div>
+            <button onclick="plotSimulation1()">Simular Crecimiento Poblacional</button>
+            <div id="populationResult"></div>
+        </section>
+
+        <section id="simulation2">
+            <h2>Simulación 2: Movimiento de Péndulo</h2>
+            <div class="content">
+                <div class="equation">
+                    <h3>Ecuación Diferencial</h3>
+                    <p>\(\frac{d^2\theta}{dt^2} + \frac{g}{l}\sin(\theta) = 0\)</p>
+                    <p>Solución: \(\theta(t) = \theta_0 \cos(\sqrt{\frac{g}{l}}t)\)</p>
+                    <div id="example2"></div>
+                </div>
+                <div class="canvas-container">
+                    <canvas id="simulationChart2"></canvas>
+                </div>
+            </div>
+            <button onclick="plotSimulation2()">Simular Movimiento de Péndulo</button>
+            <div id="pendulumResult"></div>
+        </section>
+
+        <section id="simulation3">
+            <h2>Simulación 3: Circuito Eléctrico</h2>
+            <div class="content">
+                <div class="equation">
+                    <h3>Ecuación Diferencial</h3>
+                    <p> \(V = L \frac{di}{dt} + iR\)</p>
+                    <p>Solución: \(i(t) = \frac{V}{R}\left(1 - e^{-\frac{R}{L}t}\right)\)</p>
+                    <div id="example3"></div>
+                </div>
+                <div class="canvas-container">
+                    <canvas id="simulationChart3"></canvas>
+                </div>
+            </div>
+            <button onclick="plotSimulation3()">Simular Circuito Eléctrico</button>
+            <div id="circuitResult"></div>
+        </section>
+
+        <section class="quiz">
+            <h2>Juego Didáctico: Sumas</h2>
+            <div id="mathQuiz">
+                <button onclick="startMathQuiz()">Comenzar Quiz</button>
+            </div>
+        </section>
+    </main>
+
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="Diseño sin título (13).mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
